@@ -1,0 +1,8 @@
+.Hero{
+    object-fit: cover;
+    width: 100vw;
+    height: 80vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
