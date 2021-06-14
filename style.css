@@ -1,10 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --navbar: #c1b8a9;
+    --footer: #001336;
+    --gray: #c4cdcf;
+}
+
+html,
+body {
+    max-height: 100%;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
 /* HERO START */
 .Hero{
     object-fit: cover;
@@ -76,15 +93,321 @@ padding-right: 5rem;
     border: none;
     outline: none;
     background-color: transparent;
-    color: #C1B8A9;
+    color: var(--navbar);
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
   }
-  
-@media screen and (prefers-reduced-motion: no-preference) {
-html {
-scroll-behavior: smooth;
-}
-}
 /* BUTTON TO TOP END */
+
+/* FOOTER SECTION START */
+/* Rectangle section */
+
+.lines-section {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}
+
+.rectangle-lines {
+    border-left: 1px solid white;
+    height: 90px;
+    z-index: 1;
+}
+
+.rectangle {
+    display: grid;
+    background-color: #c4cdcf;
+    width: 100%;
+    height: 150px;
+    color: white;
+    grid-template-columns: repeat(4, 1fr);
+    position: relative;
+}
+
+#line2 {
+    transform: translateX(-1000%);
+}
+
+#line3 {
+    transform: translateX(1500%);
+}
+
+#box1,
+#calendar1,
+#credit1,
+#medal1 {
+    font-size: 40px;
+    display: grid;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
+.rectangle-txt {
+    display: grid;
+    justify-content: center;
+    font-size: 20px;
+    padding-top: 1rem;
+}
+
+.additional-txt {
+    display: grid;
+    justify-content: center;
+    font-size: 16px;
+    padding-top: 0.3rem;
+}
+
+/* Rectangle section ends */
+
+/* Footer section start */
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 450px;
+    border: 1px solid var(--footer);
+    background-color: var(--footer);
+}
+
+.footer-container ul li a {
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.3s ease;
+}
+
+.footer-container ul li {
+    list-style: none;
+    line-height: 2.5rem;
+}
+
+.footer-container ul li a:hover {
+    padding-left: 8px;
+    color: lightblue;
+}
+
+.footer-title {
+    font-size: 25px;
+    white-space: nowrap;
+    color: white;
+}
+
+#column1 {
+    width: 11rem;
+}
+
+#column2 {
+    width: 10rem;
+}
+
+#column3 {
+    padding-bottom: 5rem;
+}
+
+#column4 {
+    padding-bottom: 2.5rem;
+}
+/* Footer section ends */
+
+/* Gray footer section start */
+.gray-footer {
+    display: grid;
+    background-color: var(--gray);
+    height: 80px;
+    grid-template: repeat(2, 1fr) / repeat(26, 1fr);
+}
+
+.footer-listings {
+    grid-area: 2/17/2/26;
+    transform: translate(-8%, 10%);
+}
+
+.footer-listings ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.footer-listings ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0rem 1rem;
+}
+
+.visa-img {
+    grid-area: 2/2/3/5;
+    transform: translateY(-10%);
+}
+/* Gray footer section ends */
+/* FOOTER SECTION END */
+
+/* MEDIA QUERIES START */
+/* Button to top media start */
+@media screen and (prefers-reduced-motion: no-preference) {
+    html {
+    scroll-behavior: smooth;
+    } 
+}
+/* Button to top media end */
+
+/* Footer media queries start */
+@media (max-width: 800px) {
+    /* Rectangle section  start media*/
+    .rectangle-txt {
+        font-size: 20px;
+    }
+    .additional-txt {
+        font-size: 16px;
+    }
+    .rectangle {
+        height: 440px;
+        grid-template-columns: repeat(11, 1fr);
+        min-width: 775px;
+    }
+    #box1,
+    #calendar1,
+    #credit1,
+    #medal1 {
+        font-size: 65px;
+        padding-top: 5rem;
+    }
+    .box-section {
+        display: grid;
+        grid-column-start: 1;
+        padding-left: 3rem;
+    }
+    .return-section {
+        display: grid;
+        grid-column-start: 11;
+        padding-right: 6rem;
+    }
+
+    .credit-section {
+        display: grid;
+        grid-column-start: 1;
+        padding-left: 3rem;
+        transform: translateY(-20%);
+    }
+
+    .warranty-section {
+        display: grid;
+        grid-column-start: 11;
+        padding-right: 6rem;
+        transform: translateY(-17%);
+    }
+
+    .additional-txt {
+        white-space: nowrap;
+    }
+
+    .rectangle-txt {
+        white-space: nowrap;
+    }
+
+    #return-sub,
+    #warranty-sub {
+        transform: translateY(-40%);
+    }
+
+    #box-sub {
+        transform: translateY(-30%);
+    }
+
+    #payment-sub {
+        transform: translateY(-40%);
+    }
+
+    .lines-section {
+        display: flex;
+        min-width: 775px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .rectangle-lines {
+        border-left: 1px solid #fff;
+        height: 103px;
+    }
+
+    #line1 {
+        transform: translateY(50%);
+    }
+
+    #line2 {
+        display: none;
+    }
+
+    #line3 {
+        transform: translate(5%, 125%);
+    }
+    /* Rectangle section end media*/ 
+
+    /* Footer section start media */
+    .footer-container {
+        display: grid;
+        height: 417px;
+        grid-template: repeat(6, 1fr) / repeat(11, 1fr);
+        min-width: 775px;
+    }
+
+    .footer-title {
+        font-size: 20px;
+    }
+
+    .footer-container ul li a {
+        font-size: 15px;
+    }
+
+    #column1 {
+        grid-area: 2/2/4/4;
+    }
+
+    #column2 {
+        grid-area: 2/8/4/11;
+    }
+
+    #column3 {
+        grid-area: 5/2/7/4;
+    }
+
+    #column4 {
+        grid-area: 5/8/7/10;
+    }
+
+    .footer-listings ul {
+        display: flex;
+        flex-direction: column;
+        line-height: 3em;
+    }
+    /* Footer section end media */
+
+    /* Gray-footer section start media */
+    .gray-footer {
+        display: grid;
+        height: 205px;
+        min-width: 775px;
+        grid-template: repeat(3, 1fr) / repeat(11, 1fr);
+    }
+
+    .footer-listings {
+        grid-area: 2/1/4/4;
+        padding-left: 3rem;
+        transform: translateY(-30%);
+    }
+
+    .visa-img {
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(11, 1fr);
+        grid-area: 3/7/5/11;
+    }
+}
+/* Gray-footer section end media */
+/* Footer media queries end */
+
+/* MEDIA QUERIES END */
