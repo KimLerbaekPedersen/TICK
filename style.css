@@ -31,6 +31,60 @@
     height: 100%;
     width: 100%;
 }
+/* CLASSY PRODUCTION IMAGES START */
+.Product-img{
+display: grid;
+width: 100%;
+grid-template-columns: repeat(4, 1fr);
+grid-row: repeat(4, 1fr);
+row-gap: 5rem;
+column-gap: 5rem;
+padding-left: 10rem;
+padding-right: 5rem;
+}
 
+.Product-img img{
+    width: 80%;
+    object-fit: contain;
+}
 
+.img1, .img2, .img3, .img4{
+    top: 2177px;
+    left: 195px;
+    width: 300px;
+    height: 400px;
+}
+/* CLASSY PRODUCTION IMAGES END */
+/* CLASSY PRODUCTION TXT START */
+.img-txt ul{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 20rem;
+}
+/* CLASSY PRODUCTION TXT END */
 /* CLASSY SECTION END */ 
+
+/* BUTTON TO TOP START */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #C1B8A9;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+@media screen and (prefers-reduced-motion: no-preference) {
+html {
+scroll-behavior: smooth;
+}
+}
+/* BUTTON TO TOP END */
