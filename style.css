@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
 
 *{
     padding: 0;
@@ -16,9 +17,6 @@
 html,
 body {
     max-height: 100%;
-}
-
-body {
     font-family: "DM Sans", sans-serif;
 }
 
@@ -35,14 +33,14 @@ body {
 /* CLASSY SECTION START */
 .Classy{
     color: #fff;
-    background-color: #000;
-    font-size: 50px;
+    background-color: var(--footer);
+    font-size: 25px;
     text-align: center;
-    border: 30px solid black;
+    border: 30px solid var(--footer);
     width: 100%;
     font-family: 'EB Garamond', serif;
     font-weight: bolder;
-    margin-top: -4px;
+    margin-top: -5px;
 }
 .Classy-cover{
     height: 100%;
@@ -64,8 +62,13 @@ padding-right: 5rem;
     width: 80%;
     object-fit: contain;
 }
-
-.img1, .img2, .img3, .img4{
+.img2{
+    top: 2177px;
+    left: 195px;
+    width: 300px;
+    height: 385px;
+}
+.img1, .img3, .img4{
     top: 2177px;
     left: 195px;
     width: 300px;
@@ -73,12 +76,62 @@ padding-right: 5rem;
 }
 /* CLASSY PRODUCTION IMAGES END */
 /* CLASSY PRODUCTION TXT START */
-.img-txt ul{
+
+.Product-img{
     display: grid;
-    width: 100%;
     grid-template-columns: repeat(4, 1fr);
-    padding-left: 20rem;
+    justify-items: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
+
+.Product-txt1, .Product-txt2, .Product-txt3, .Product-txt4{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-110%);
+}
+.Product-txt2{
+    margin-top: 15px;
+}
+.Product-txt3{
+    padding-right: 10px;
+}
+
+#Price1{
+    padding-left: 20px;
+    transform: translateY(50%);
+}
+#Price2{
+    padding-left: 15px;
+    transform: translateY(50%);
+}
+#Price3{
+    padding-left: 5px;
+    transform: translateY(50%);
+}
+#Price4{
+    padding-left: 20px;
+    transform: translateY(50%);
+}
+
+#Eldorado, #Eclipse, #Rosé, #Warden{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .3s;
+}
+.card:hover{
+    box-shadow: 0rem 0.5rem 0.8rem rgba(0, 0, 0, 0.8);
+    transform: translateX(10px);
+}
+
 /* CLASSY PRODUCTION TXT END */
 /* CLASSY SECTION END */ 
 
@@ -93,12 +146,188 @@ padding-right: 5rem;
     border: none;
     outline: none;
     background-color: transparent;
-    color: var(--navbar);
+    color: var(--gray);
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
   }
 /* BUTTON TO TOP END */
+
+/* DISCOVER TICK START */
+.Discover{
+    color: #fff;
+    background-color: var(--footer);
+    font-size: 25px;
+    text-align: center;
+    border: 30px solid var(--footer);
+    width: 100%;
+    font-family: 'EB Garamond', serif;
+    font-weight: bolder;
+    margin-top: -5px;
+}
+/* DISCOVER TIC END */
+
+/* SLIDESHOW START */
+.slider{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    margin: 0 auto;
+    
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    object-fit: cover;
+    width: 100%;
+    height: 700px;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 650px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid var(--gray);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: var(--navbar);
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: var(--navbar);
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: var(--navbar);
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: var(--navbar);
+  }
+
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+/* SLIDESHOW END */
+
+/* ========CONTACT INFO START========= */
+.subscribe-box{
+    font-family: 'EB Garamond', serif;
+    color: #fff;
+    display: grid;
+    width: 100%;
+    height: 90vh;
+    background-image: url(/IMG/newsletter.png);
+    background-size: cover;
+    grid-template: repeat(20, 1fr) / repeat(26, 1fr);
+}
+
+  .subscribe-box img{
+      width: 100vw;
+      height: 100vh;
+  }
+
+  #newsletter-sub, #news-info, #news-discount{
+      white-space: nowrap;
+  } 
+
+  .news1{
+      font-size: 45px;
+      grid-area: 7/14/10/16;
+  }
+
+  .news2{
+    font-size: 23px;
+    grid-area: 9/14/10/16;
+    transform: translateY(-20%);
+  }
+  .news3{
+    font-weight: 900;
+    font-size: 20px;
+    grid-area: 11/14/18/16;
+  }
+  .news4{
+    grid-area: 14/14/18/16;
+  }
+
+  .news-checkbox{
+      white-space: nowrap;
+      grid-area: 16/14/18/16;
+  }
+
+  #checkbox-txt{
+      font-size: 20px;
+      padding-left: 8px;
+  }
+
+  .sub{
+      grid-area: 18/14/18/16;
+  }
+
+  input[type=email] {
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;  
+    width: 341%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #fff;
+  }
+
+  input[type=checkbox]{
+      
+  }
+
+  input[type=button]{
+      color: red;
+      background-color: transparent;
+
+  }
+  /* ========CONTACT INFO END========= */
+
 
 /* FOOTER SECTION START */
 /* Rectangle section */
@@ -120,7 +349,7 @@ padding-right: 5rem;
 
 .rectangle {
     display: grid;
-    background-color: #c4cdcf;
+    background-color: var(--navbar);
     width: 100%;
     height: 150px;
     color: white;
@@ -216,7 +445,7 @@ padding-right: 5rem;
 /* Gray footer section start */
 .gray-footer {
     display: grid;
-    background-color: var(--gray);
+    background-color: var(--navbar);
     height: 80px;
     grid-template: repeat(2, 1fr) / repeat(26, 1fr);
 }
@@ -246,6 +475,15 @@ padding-right: 5rem;
 /* FOOTER SECTION END */
 
 /* MEDIA QUERIES START */
+/* NEWSLETTER MEDIA START */
+ @media screen and (max-width: 800px){
+    .column, .column1, input[type=submit]{
+      width: 100%;
+      margin-top: 0;
+      }
+    }
+/* NEWSLETTER MEDIA END*/
+
 /* Button to top media start */
 @media screen and (prefers-reduced-motion: no-preference) {
     html {

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
     crossorigin="anonymous"/>
-    <title>Document</title>
+    <title>Tick</title>
 </head>
 <body>
     <!-- HERO START -->
@@ -27,26 +27,95 @@
     <img class="Classy-cover" src="IMG/classy.png" alt="">
 
     <nav class="Product-img">
-        <img class="img1" src="/IMG/Classy-Watch1 copy.png" alt="">
-        <img class="img2" src="/IMG/Classy-Watch2 copy.png" alt="">
-        <img class="img3" src="/IMG/Classy-Watch3 copy.png" alt="">
-        <img class="img4" src="/IMG/Classy-Watch4 copy.png" alt="">
-    </nav>
-    <nav class="img-txt">
-        <ul>
-            <div><li><a href="">Eclipse $100</a></li></div>
-            <div><li><a href="">Eclipse $100</a></li></div>
-            <div><li><a href="">Eclipse $100</a></li></div>
-            <div><li><a href="">Eclipse $100</a></li></div>
-        </ul>
+        <div class="card">
+            <img class="img1" src="/IMG/Classy-Watch1 copy.png" alt="">
+            <a class="Product-txt1" href=""><span id="Eldorado">Eldorado</span> <span id="Price1">$369</span></a>
+        </div>
+        <div class="card">
+            <img class="img2" src="/IMG/Classy-Watch2 copy.png" alt="">
+            <a class="Product-txt2" href=""><span id="Eclipse">Eclipse</span> <span id="Price2">$349</span></a>
+        </div>
+        <div class="card">
+            <img class="img3" src="/IMG/Classy-Watch3 copy.png" alt="">
+            <a class="Product-txt3" href=""><span id="Rosé">Rosé</span> <span id="Price3">$299</span></a>
+        </div>
+        <div class="card">
+            <img class="img4" src="/IMG/Classy-Watch4 copy.png" alt="">
+            <a class="Product-txt4" href=""><span id="Warden">Warden</span> <span id="Price4">$419</span></a>
+        </div> 
     </nav>
     
     <!-- CLASSY SECTION END -->
 
     <!-- BUTTON TO TOP START -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-circle-up"></i></button>
-    
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-circle-up"></i></button>    
     <!-- BUTTON TO TOP END -->
+
+    <!-- DISCOVER TICK START -->
+    <nav class="Discover">
+        <h1>Discovering Tick</h1>
+    </nav>
+    <!-- DISCOVER TICK END -->
+
+
+    <!-- SLIDESHOW START -->
+      <!--image slider start-->
+      <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="IMG/Black2test copy.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="IMG/blackTest copy.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="IMG/Brown1test copy.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="IMG/Brown2test.jpg" alt="">
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+      </div>
+      <!--image slider end-->
+  <!-- SLIDESHOW END -->
+
+<!-- VALIDATE START -->
+<section class="subscribe-box">
+    <h1 class="news1" id="newsletter-sub">Subscribe to our newsletter!</h1>
+    <span class="news2" id="news-info">You will receive our latest news and offers</span>
+    <span class="news3" id="news-discount">-15% on the first purchase</span>
+    
+    <form class="news4" action="#">
+        <input type="email" name="email_address" placeholder="YOUR E-MAIL HERE">
+    </form>
+
+    <form class="news-checkbox" action="#">
+        <input type="checkbox" name="newsletter-check"> <span id="checkbox-txt">I accept the terms and conditions</span>
+    </form>
+
+    <form class="sub" action="#">
+        <input type="button" value="Subscribe">
+    </form>
+</section> 
+
+
+<!-- VALIDATE END -->
 
     <!-- FOOTER SECTION START -->
      <!-- Rectangle section start -->
