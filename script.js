@@ -45,10 +45,8 @@ function validateContact(){
     return false;
   }
   else if(checkboxVar.value == ""){
-    alert("Please accept out trems and conditions");
+    alert("Please accept our terms and conditions");
     return false;
   }
 }
 /* ======VALIDATE END===== */
-
-

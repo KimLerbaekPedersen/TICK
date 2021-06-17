@@ -96,7 +96,7 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-#classy {
+#classy, #business, #sporty, #gallery {
     scroll-margin-top: 100px;
 }
 
@@ -353,6 +353,113 @@ padding-right: 5rem;
 }
 
 #Angler, #Sapphire, #Crono, #Inca{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .3s;
+}
+.card:hover{
+    box-shadow: 0rem 0.5rem 0.8rem rgba(0, 0, 0, 0.8);
+    transform: translateX(10px);
+}
+
+/* BUSINESS PRODUCTION TXT END */
+/* BUSINESS SECTION END */
+
+/* SPORTY SECTION START */
+.Sporty{
+    color: #fff;
+    background-color: var(--footer);
+    font-size: 25px;
+    text-align: center;
+    border: 30px solid var(--footer);
+    width: 100%;
+    font-family: 'EB Garamond', serif;
+    font-weight: bolder;
+    margin-top: -5px;
+}
+.Sporty-cover{
+    object-fit: cover;
+    height: 80vh;
+    width: 100%;
+}
+/* BUSINESS PRODUCTION IMAGES START */
+.Product-img{
+display: grid;
+width: 100%;
+grid-template-columns: repeat(4, 1fr);
+grid-row: repeat(4, 1fr);
+row-gap: 5rem;
+column-gap: 5rem;
+padding-left: 10rem;
+padding-right: 5rem;
+}
+
+.Product-img img{
+    width: 80%;
+    object-fit: contain;
+}
+
+.img9, .img10, .img11, .img12{
+    top: 2177px;
+    left: 195px;
+    width: 300px;
+    height: 400px;
+}
+/* BUSINESS PRODUCTION IMAGES END */
+/* BUSINESS PRODUCTION TXT START */
+
+.Product-img{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.Product-txt9, .Product-txt10, .Product-txt11, .Product-txt12{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-110%);
+}
+
+.Product-txt9{
+    padding-right: 10px;
+}
+
+.Product-txt11{
+    padding-left: 0px;
+}
+
+.Product-txt12{
+    padding-left: 0px;
+}
+
+#Price9{
+    padding-left: 15px;
+    transform: translateY(50%);
+}
+#Price10{
+    padding-left: 35px;
+    transform: translateY(50%);
+}
+#Price11{
+    padding-right: -5px;
+    transform: translateY(50%);
+}
+#Price12{
+    padding-left: 15px;
+    transform: translateY(50%);
+}
+
+#Tuatara, #Kensington, #Java, #Legano{
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -815,7 +922,7 @@ padding-right: 5rem;
     }
     /* Classy section media queries END */
 
-    /* Product img media queries START */
+    /* Classy product img media queries START */
     .Product-img {
         display: grid;
         grid-template: repeat(1, 1fr) / repeat(2, 1fr);
@@ -873,11 +980,11 @@ padding-right: 5rem;
         width: 250px;
         height: 329px;
     }
-    /* Product img media queries END */
+    /* Classy product img media queries END */
 }
 /* BUSINESS MEDIA START */
 @media screen and (max-width: 800px){
-    /* Classy section media queries START */
+    /* Business section media queries START */
     .Business {
         min-width: 775px;
     }
@@ -887,9 +994,9 @@ padding-right: 5rem;
         min-width: 775px;
         object-fit: cover;
     }
-    /* Classy section media queries END */
+    /* Business section media queries END */
 
-    /* Product img media queries START */
+    /* Business product img media queries START */
     .Product-img {
         display: grid;
         grid-template: repeat(1, 1fr) / repeat(2, 1fr);
@@ -947,9 +1054,84 @@ padding-right: 5rem;
         width: 250px;
         height: 329px;
     }
-    /* Product img media queries END */
+    /* Business product img media queries END */
 }
 /* BUSINESS MEDIA END */
+
+/* SPORTY MEDIA START */
+@media screen and (max-width: 800px){
+       /* Business section media queries START */
+    .Sporty {
+        min-width: 775px;
+    }
+
+    .Sporty-cover {
+        height: 350px;
+        min-width: 775px;
+        object-fit: cover;
+    }
+    /* Business section media queries END */
+
+    /* Business product img media queries START */
+    .Product-img {
+        display: grid;
+        grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+        row-gap: 0.8rem;
+    }
+
+    #Tuatara {
+        transform: translate(-4%, 75%);
+    }
+
+    #Kensington {
+        transform: translateY(75%);
+    }
+
+    #Java {
+        transform: translateY(80%);
+    }
+
+    #Legano {
+        transform: translate(-6%, 75%);
+    }
+
+    #Price9 {
+        transform: translateY(120%);
+    }
+
+    #Price10 {
+        transform: translateY(125%);
+    }
+
+    #Price11 {
+        transform: translate(-4%, 100%);
+    }
+
+    #Price12 {
+        transform: translate(-7%, 100%);
+    }
+
+    .card > .img9 {
+        width: 250px;
+        height: 329px;
+    }
+
+    .card > .img10 {
+        width: 250px;
+        height: 329px;
+    }
+
+    .card > .img11 {
+        width: 250px;
+        height: 329px;
+    }
+
+    .card > .img12 {
+        width: 250px;
+        height: 329px;
+    }
+}
+/* SPORTY MEDIA END */
 
 /* NEWSLETTER MEDIA START */
  @media screen and (max-width: 800px){
