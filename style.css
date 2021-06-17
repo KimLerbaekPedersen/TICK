@@ -320,31 +320,6 @@ padding-right: 5rem;
   input[type=checkbox]{
 
   }
-/* 
-  input[type=button]{
-    font-family: 'EB Garamond', serif;
-    font-size: 20px;
-    color: white;
-    background-color: transparent;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border: 2px solid #fff;
-    text-transform: uppercase;
-  }
-
-  input[type=button]:hover{
-    position: absolute;
-    top: 0;
-    left: -70px;
-    height: 98px;
-    width: 50px; 
-    background: rgba(255, 255, 255, 0.4);
-    transition: all .3s linear;
-    transform: skewX(20deg) translateX(0);
-  } */
-
-
 
   .container {
     grid-area: 18/14/18/16;
