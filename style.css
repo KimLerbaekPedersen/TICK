@@ -699,6 +699,7 @@ padding-right: 5rem;
 }
 /* Navbar media queries END */
 
+@media (max-width: 800px) {
  /* Classy section media queries START */
     .Classy {
         min-width: 775px;
@@ -770,7 +771,7 @@ padding-right: 5rem;
         height: 329px;
     }
     /* Product img media queries END */
-
+}
 /* NEWSLETTER MEDIA START */
  @media screen and (max-width: 800px){
     .column, .column1, input[type=submit]{
