@@ -44,8 +44,12 @@ function validateContact(){
     alert("Please enter an Email");
     return false;
   }
-  else if(checkboxVar.value == ""){
-    alert("Please accept our terms and conditions");
+  else if() {
+
+  }
+  else(this.form.checkbox.checked)
+  {
+    alert("You must agree to the terms and conditions first.");
     return false;
   }
 }
