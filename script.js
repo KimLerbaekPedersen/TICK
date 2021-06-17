@@ -44,9 +44,6 @@ function validateContact(){
     alert("Please enter an Email");
     return false;
   }
-  else if() {
-
-  }
   else(this.form.checkbox.checked)
   {
     alert("You must agree to the terms and conditions first.");
