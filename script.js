@@ -1,5 +1,12 @@
 var emailVar = document.getElementsByClassName("news4");
 var checkboxVar = document.getElementsByClassName("news-checkbox");
+
+/* Closable bar START*/
+function Hide(Bar) {
+  Bar.style.display = "none";
+}
+/* Closable bar END */
+
 //Get the button
 var mybutton = document.getElementById("myBtn");
     
