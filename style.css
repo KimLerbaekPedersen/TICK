@@ -302,10 +302,6 @@ padding-right: 5rem;
       padding-left: 8px;
   }
 
-  /* .sub{
-      grid-area: 18/14/18/16;
-  } */
-
   input[type=email] {
     font-family: 'EB Garamond', serif;
     font-size: 20px;
@@ -316,36 +312,7 @@ padding-right: 5rem;
     border: none;
     border-bottom: 2px solid #fff;
   }
-
-  input[type=checkbox]{
-
-  }
-/* 
-  input[type=button]{
-    font-family: 'EB Garamond', serif;
-    font-size: 20px;
-    color: white;
-    background-color: transparent;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border: 2px solid #fff;
-    text-transform: uppercase;
-  }
-
-  input[type=button]:hover{
-    position: absolute;
-    top: 0;
-    left: -70px;
-    height: 98px;
-    width: 50px; 
-    background: rgba(255, 255, 255, 0.4);
-    transition: all .3s linear;
-    transform: skewX(20deg) translateX(0);
-  } */
-
-
-
+/* SUBSCRIBE BUTTON START */
   .container {
     grid-area: 18/14/18/16;
   }
@@ -391,7 +358,7 @@ padding-right: 5rem;
     font-size: 18px;
     font-weight: 100;
   }
-  
+  /* SUBSCRIBE BUTTON START */
 
   /* ========CONTACT INFO END========= */
 

@@ -1,5 +1,5 @@
 var emailVar = document.getElementsByClassName("news4");
-var lnVar = document.getElementById("lname");
+var checkboxVar = document.getElementsByClassName("news-checkbox");
 //Get the button
 var mybutton = document.getElementById("myBtn");
     
@@ -34,11 +34,11 @@ setInterval(function(){
 /* ======VALIDATE START====== */
 function validateContact(){
   if(emailVar.value == ""){
-    alert("please fill out first name");
+    alert("Please enter an Email");
     return false;
   }
-  else if(lnVar.value == ""){
-    alert("please fill out last name");
+  else if(checkboxVar.value == ""){
+    alert("Please accept out trems and conditions");
     return false;
   }
 }
