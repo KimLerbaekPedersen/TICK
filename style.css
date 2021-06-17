@@ -187,7 +187,7 @@ grid-template-columns: repeat(4, 1fr);
 grid-row: repeat(4, 1fr);
 row-gap: 5rem;
 column-gap: 5rem;
-padding-left: 10rem;
+padding-left: 4rem;
 padding-right: 5rem;
 }
 
@@ -293,7 +293,7 @@ grid-template-columns: repeat(4, 1fr);
 grid-row: repeat(4, 1fr);
 row-gap: 5rem;
 column-gap: 5rem;
-padding-left: 10rem;
+padding-left: 4rem;
 padding-right: 5rem;
 }
 
@@ -388,7 +388,7 @@ padding-right: 5rem;
     height: 80vh;
     width: 100%;
 }
-/* BUSINESS PRODUCTION IMAGES START */
+/* SPORTY PRODUCTION IMAGES START */
 .Product-img{
 display: grid;
 width: 100%;
@@ -396,7 +396,7 @@ grid-template-columns: repeat(4, 1fr);
 grid-row: repeat(4, 1fr);
 row-gap: 5rem;
 column-gap: 5rem;
-padding-left: 10rem;
+padding-left: 4rem;
 padding-right: 5rem;
 }
 
@@ -411,8 +411,8 @@ padding-right: 5rem;
     width: 300px;
     height: 400px;
 }
-/* BUSINESS PRODUCTION IMAGES END */
-/* BUSINESS PRODUCTION TXT START */
+/* SPORTY PRODUCTION IMAGES END */
+/* SPORTY PRODUCTION TXT START */
 
 .Product-img{
     display: grid;
@@ -475,8 +475,8 @@ padding-right: 5rem;
     transform: translateX(10px);
 }
 
-/* BUSINESS PRODUCTION TXT END */
-/* BUSINESS SECTION END */
+/* SPORTY PRODUCTION TXT END */
+/* SPORTY SECTION END */
 
 /* BUTTON TO TOP START */
 #myBtn {
